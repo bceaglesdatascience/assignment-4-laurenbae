@@ -24,12 +24,12 @@ final_cost = add_tax(costs, sales_tax)
 
 cost_per_customer = {}
 
-counter=len(names) - 1
-while counter>= 0:
+counter= 0
+while counter <= len(names) - 1:
     i=counter
     names_entry = names[i]
     cost_per_customer[names_entry] = "0"
-    counter-=1
+    counter+=1
 
 if len(cost_per_customer) < len(names):
     for i,person in enumerate(cost_per_customer):
