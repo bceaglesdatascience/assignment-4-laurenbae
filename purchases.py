@@ -28,7 +28,6 @@ counter=len(names) - 1
 while counter>= 0:
     i=counter
     names_entry = names[i]
-    print(names_entry)
     cost_per_customer[names_entry] = "0"
     counter-=1
 
@@ -42,8 +41,6 @@ if len(cost_per_customer) < len(names):
                 count += 1
                 cost_per_customer[person]= value
             else:
-                count += 1  
-    
-#costs_entry = final_cost[i]
+                count += 1
 
 print(cost_per_customer)
